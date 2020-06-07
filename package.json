@@ -1,0 +1,21 @@
+{
+  "name": "ue4-socket-io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tcpSrv.js",
+  "scripts": {
+    "build": "tsc",
+    "tcp": "./node_modules/.bin/node ./build/tcpSrv.js",
+    "wtcp": "tsc-watch --outDir ./build --onSuccess \"npm run tcp\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/node": "^14.0.6",
+    "moment": "^2.26.0",
+    "tsc-watch": "^4.2.8",
+    "typescript": "^3.9.3",
+    "uniqid": "^5.2.0"
+  }
+}
